@@ -16,15 +16,15 @@
     - Number of devices used
     - Current internet speed
 
-- *Filtering Process:* Once the model predicted the ideal internet speed for the user, I filtered the results using the FCC Broadband Dataset to find the most suitable internet plans offered by providers in the user's county. The filtering criteria were based on the user’s county, predicted internet speed, and available providers in their area.
+- **Filtering Process:** Once the model predicted the ideal internet speed for the user, I filtered the results using the FCC Broadband Dataset to find the most suitable internet plans offered by providers in the user's county. The filtering criteria were based on the user’s county, predicted internet speed, and available providers in their area.
 
-- *UI/UX Design:* The final plan finder was deployed using Streamlit, a Python-based platform for creating interactive web applications. I incorporated custom HTML and CSS to design a clean, user-friendly interface that allowed users to input their details (e.g., county, age, income, number of devices) and receive tailored broadband plan recommendations. The web application displayed:
+- **UI/UX Design:** The final plan finder was deployed using Streamlit, a Python-based platform for creating interactive web applications. I incorporated custom HTML and CSS to design a clean, user-friendly interface that allowed users to input their details (e.g., county, age, income, number of devices) and receive tailored broadband plan recommendations. The web application displayed:
 
   - Provider Name
   - Download/Upload Speed
   - County Information
 
-- *Business Impact:* This project provides the Company with a valuable tool to enhance user engagement and experience. By offering personalized broadband plan recommendations based on real-time input, they can:
+- **Business Impact:** This project provides the Company with a valuable tool to enhance user engagement and experience. By offering personalized broadband plan recommendations based on real-time input, they can:
 
   - Improve customer satisfaction through tailored recommendations.
   - Potentially increase conversions by matching users with the most suitable broadband plans.
