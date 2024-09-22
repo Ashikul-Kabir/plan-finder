@@ -1,4 +1,4 @@
-# 🎈 Blank app template
+# Plan Finder App Template
 
 A simple Streamlit app template for you to modify!
 
