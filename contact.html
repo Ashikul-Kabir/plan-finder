@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Internet Speed and Plan Suggestion App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://i.imghippo.com/files/hLPFc1724267612.png" alt="Logo">
+            </div>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <h1>Meet Our Team</h1>
+                <p class="intro-text">We're here to help! Get in touch with any of our team members below.</p>
+
+                <div class="team-grid">
+                    {% for member in team_members %}
+                    <div class="team-member">
+                        <img src="{{ member.image }}" alt="{{ member.name }}">
+                        <h3>{{ member.name }}</h3>
+                        <p>{{ member.role }}</p>
+                        <p>Email: <a href="mailto:{{ member.email }}">{{ member.email }}</a></p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Byte Brigade, All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
